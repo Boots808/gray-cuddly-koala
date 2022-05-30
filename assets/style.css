@@ -3,7 +3,7 @@ header {
     color: white;
     font-size: x-large;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 50px;
+    height: 70px;
     width: 100%;
 }
 
@@ -14,13 +14,13 @@ body {
 }
 
 footer {
-    margin-top: 400px;
+    margin-top: 300px;
     background-color:blueviolet;
     color: white;
     font-size: x-large;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 50px;
+    height: 100px;
     width: 100%;
 }
 
@@ -38,3 +38,17 @@ footer {
     text-decoration: none;
     overflow-wrap: initial;
 }
+.button {
+    border: none;
+    color: white;
+    background-color:red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 40px 800px;
+    cursor: pointer;
+    border: 5px dotted navy;
+    border-radius: 15px;
+  }
