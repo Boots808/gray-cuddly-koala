@@ -45,6 +45,8 @@ h1 {
     cursor: pointer;
     border: 5px dotted navy;
     border-radius: 15px;
+    height: 45px;
+    width: 100px;
   }
 
   .quiz-timer {

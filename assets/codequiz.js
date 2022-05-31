@@ -1,16 +1,15 @@
 
+var sec = 60;
+var time = setInterval(myTimer, 1000);
 
-// var sec = 60;
-// var time = setInterval(myTimer, 1000);
-
-// function myTimer() {
-   // document.getElementById('timer').innerHTML = sec + "seconds left";
-   // sec--;
-   // if (sec == -1) {
-     //   clearInterval(time);
-     //   alert("Out of Time!");
-   // }
-//}
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec + "seconds left";
+    sec--;
+    if (sec == -1) {
+    clearInterval(time);
+    alert("Out of Time!");
+    }
+ }
 
 const question = document.getElementById("question");
 const choices = document.getElementsByClassName('choice-text');
@@ -92,4 +91,4 @@ choices.forEach(choice ==> {
 startGame();
 
 
-
+//reference used: https://www.youtube.com/watch?v=zZdQGs62cR8
