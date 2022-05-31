@@ -1,10 +1,10 @@
 header {
-    background-color:blueviolet;
-    color: white;
+    color: violet;
     font-size: x-large;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 75px;
     width: 100%;
+    margin: 20px 20px 20px 20px;
 }
 
 body {
@@ -13,15 +13,11 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-footer {
-    margin-top: 300px;
-    background-color:blueviolet;
-    color: white;
-    font-size: x-large;
+
+h1 {
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100px;
-    width: 100%;
+    text-decoration: underline;
+    color: darkmagenta;
 }
 
 .questions {
@@ -36,13 +32,11 @@ footer {
     font-size: 14pt;
     text-align: center;
     text-decoration: none;
-    overflow-wrap: initial;
 }
-.button {
+.btn {
     border: none;
     color: white;
-    background-color:red;
-    padding: 15px 32px;
+    background-color:purple;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -55,5 +49,15 @@ footer {
 
   .quiz-timer {
       text-align: right;
+      margin-top: 20px;
 
-  }
+ 
+  footer {
+    margin-top: 300px;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100px;
+    width: 100%;
+}
