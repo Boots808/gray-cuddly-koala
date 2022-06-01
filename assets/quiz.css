@@ -1,3 +1,4 @@
+/*styles for quiz html doc */
 
 .container {
     width: 100vw;
@@ -7,6 +8,7 @@
     align-items: center;
     max-width: 800 ram
     margin 0 auto;
+    text-align: center;
 }
 
 .flex-column {
@@ -49,4 +51,5 @@ flex-direction: column;
 .choice-text {
     padding: 1.5rem;
     width: 100%;
+    font-size: 24pt;
 }

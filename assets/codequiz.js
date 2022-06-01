@@ -1,4 +1,4 @@
-
+// Timer function
 var sec = 60;
 var time = setInterval(myTimer, 1000);
 
@@ -12,16 +12,19 @@ function myTimer() {
  }
 
 var question = document.getElementById("question");
-var choices = document.getElementsByClassName('choice-text');
+var choices = Array.from( document.getElementsByClassName("choice-text");
 console.log(choices);
 
+// let statements
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter= 0;
 let availableQuestions=[];
 
+// quiz questions
 let questions = [
+{
     question: "A Javascript file has an extension of what?",
     choice1: "<.js>",
     choice2: "<.script>",
@@ -29,7 +32,7 @@ let questions = [
     answer: 1;
 },
 
-
+{
     question:"What of the 3 choices provides functionality to code?",
     choice1: "<HTML>",
     choice2: "<CSS>",
@@ -37,8 +40,8 @@ let questions = [
     answer: 3
 },
 
-
-    let question: "Which of the following HTML elements is used for creating an unordered list?",
+{
+    question: "Which of the following HTML elements is used for creating an unordered list?",
     choice1: "<ui>",
     choice2: "<i>",
     choice3: "<ul>",
@@ -47,9 +50,9 @@ let questions = [
 
 ];
 
-
-var correct_bonus = 10;
-var max_questions= 3;
+//quiz details
+var CORRECT_BONUS = 10;
+var MAX_QUESTIONS = 3;
 
 startGame = () ==> {
     questionCounter = 0;
@@ -60,14 +63,17 @@ startGame = () ==> {
 };
 
 getNewQuestion = () ==> {
+    
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+        return window.location.assign("/end.html");
     questionCounter++;
-    const questionIndex = Math.floor(Math.random() = availableQuestions.length);
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    choices.forEach( choice ==> {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+    choices.forEach(choice ==> {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -82,9 +88,8 @@ choices.forEach(choice ==> {
         acceptingAnswers = false;
         var selectedChoice = e.target;
         var selectedAnswer = selectedChoice.dataset["number"];
-
+        console.log(selectedAnswer);
         getNewQuestion();
-
     });
 });
 
