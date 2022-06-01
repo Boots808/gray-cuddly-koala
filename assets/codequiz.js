@@ -11,8 +11,8 @@ function myTimer() {
     }
  }
 
-const question = document.getElementById("question");
-const choices = document.getElementsByClassName('choice-text');
+var question = document.getElementById("question");
+var choices = document.getElementsByClassName('choice-text');
 console.log(choices);
 
 let currentQuestion = {};
@@ -28,16 +28,16 @@ let questions = [
     choice3: "<Colored Style Sheets>",
     answer: 1;
 },
-{
-    let question: 
-    "What of the 3 choices provides functionality to code?",
+
+
+    question:"What of the 3 choices provides functionality to code?",
     choice1: "<HTML>",
     choice2: "<CSS>",
     choice3: "<Javascript>",
     answer: 3
 },
 
-{
+
     let question: "Which of the following HTML elements is used for creating an unordered list?",
     choice1: "<ui>",
     choice2: "<i>",
@@ -47,12 +47,12 @@ let questions = [
 
 ];
 
-//constants
-const correct_bonus = 10;
-const max_questions= 3;
+
+var correct_bonus = 10;
+var max_questions= 3;
 
 startGame = () ==> {
-    questionCounter=0;
+    questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     console.log(availableQuestions);
@@ -80,8 +80,8 @@ choices.forEach(choice ==> {
         if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        var selectedChoice = e.target;
+        var selectedAnswer = selectedChoice.dataset["number"];
 
         getNewQuestion();
 

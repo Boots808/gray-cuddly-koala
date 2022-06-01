@@ -1,5 +1,5 @@
 header {
-    color: violet;
+    color: purple;
     font-size: x-large;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 75px;
@@ -17,7 +17,7 @@ body {
 h1 {
     text-align: center;
     text-decoration: underline;
-    color: darkmagenta;
+    color: black;
 }
 
 .questions {
@@ -32,24 +32,25 @@ h1 {
     font-size: 14pt;
     text-align: center;
     text-decoration: none;
+    margin: 20px 30px 20px 60px;
 }
 .btn {
     border: none;
     color: white;
     background-color:purple;
     text-align: center;
+    margin: 50px 50px 50px 850px;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-    margin: 40px 800px;
+    font-size: 28px;
     cursor: pointer;
-    border: 5px dotted navy;
+    border: 5px dotted gray;
     border-radius: 15px;
     height: 45px;
     width: 100px;
   }
 
-  .quiz-timer {
+  .timer {
       text-align: right;
       margin-top: 20px;
 
