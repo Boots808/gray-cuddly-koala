@@ -22,10 +22,10 @@ let questionCounter= 0;
 let availableQuestions=[];
 
 let questions = [
-    question: "What does CSS stand for?",
-    choice1: "<Cascading Style Sheet>",
-    choice2: "<Coding Style Sheet>",
-    choice3: "<Colored Style Sheets>",
+    question: "A Javascript file has an extension of what?",
+    choice1: "<.js>",
+    choice2: "<.script>",
+    choice3: "<.javascript>",
     answer: 1;
 },
 

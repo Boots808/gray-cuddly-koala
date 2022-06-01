@@ -36,8 +36,8 @@ flex-direction: column;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    border: 0.1rem solid lightskyblue;
-    background-color: white;
+    border: 0.3rem solid lightskyblue;
+    background-color: lightgray;
 }
 
 .choice-prefix {
